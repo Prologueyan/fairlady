@@ -1,2 +1,2 @@
 # fairlady
-simulate a snake game from other's project
+simulate a musicplayer from other's project
