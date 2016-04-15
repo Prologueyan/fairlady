@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25272d">
+
+    <TextView
+        android:id="@+id/textViewSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/textViewSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#80FFFFFF"
+        android:textSize="15sp" />
+
+
+    <co.mobiwise.library.MusicPlayerView
+        android:id="@+id/mpv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textViewSinger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:buttonColor="#ff0028"
+        app:progressLoadedColor="#00815e"
+        app:textColor="#80FFFFFF"
+        app:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/play_mode"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mpv"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_backround_deep"
+        android:src="@drawable/button_playmode_repeat_single" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mpv"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/icon_like" />
+
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/mpv"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_toStartOf="@+id/like"
+        android:background="@drawable/icon_next" />
+
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/mpv"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/play_mode"
+        android:background="@drawable/icon_previous" />
+
+</RelativeLayout>

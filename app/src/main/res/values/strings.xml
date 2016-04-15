@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Myfairlady</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="haha">haha</string>
+    <string name="songlist">歌 单</string>
+    <string name="artist">歌 手</string>
+    <string name="playall">播放全部</string>
+    <string name="unknown_artist">unknown_artist</string>
+</resources>
