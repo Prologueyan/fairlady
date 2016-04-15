@@ -33,7 +33,7 @@ import java.util.List;
 
 public class MainActivity extends android.support.v4.app.FragmentActivity implements android.support.v4.app.FragmentManager.OnBackStackChangedListener {
 
-    private MenuDrawer mDawer = null;
+    private MenuDrawer mDawer ;
     private android.support.v4.view.ViewPager mViewPager;
     private android.support.v4.app.FragmentPagerAdapter mFragmentPagerAdapter;
     private android.support.v4.app.FragmentManager mFragmentManager;
